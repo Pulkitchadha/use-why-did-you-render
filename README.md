@@ -3,15 +3,23 @@
 
 ## How to use it:
 
-1. Add the below code to your component.
+1. First, install.
+   
+```sh
+  npm install use-why-did-you-render
+            OR
+  yarn add use-why-did-you-render
+```
+
+2. Then,add the below code to your component.
 
 ```sh
 useWhyDidYouRender(props, { name : "COMPONENT_NAME", printLog: true });
-                    OR
+            OR
 const { changedProps } = useWhyDidYouRender(props);
 console.log(changedProps);
 ```
-### Output:
+3. When component re-renders, it will print it on console.
 ```sh
 COMPONENT_NAME => {
     PROP_NAME: {
@@ -22,14 +30,15 @@ COMPONENT_NAME => {
         from: oldValue,
         to: newValue,
     },
-    ---------------
 }
 ```
 
-## Options
+### Options
 
-1) name: number, Default: useWhyDidYouRender
-2) printLog: boolean, Default: false
+| Property           | Description                        | Type                   | Default
+| :------------------ |:----------------------------------:| :---------------------:|---------:|
+| name          | Like Component name  | string | useWhyDidYouRender |
+| printLog      | If true prints prop changes  | boolean | false
 
 ## License
 
