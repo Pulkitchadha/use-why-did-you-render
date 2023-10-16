@@ -32,8 +32,8 @@ export function useWhyDidYouRender(props: Record<string, any>, options: IOptions
                 }
             }
 
-            if (Object.keys(data).length && printLog) {
-                console.log(`${name} =>`, data);
+            if (Object.keys(data).length) {
+                printLog && console.log(`${name} =>`, data);
                 setChangedProps(data);
             }
         }
