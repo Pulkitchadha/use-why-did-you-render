@@ -1,10 +1,11 @@
 {
   "name": "use-why-did-you-render",
-  "version": "1.1.0",
-  "description": "his hook helps to identify the changes in react component that made it to re-render and returns an object with the changes",
+  "version": "1.0.1",
+  "description": "This react hook helps to find which prop change is causing re-renders in a React component",
   "author": "Pulkit Chadha",
   "license": "Apache-2.0",
-  "repository": "",
+  "repository": "https://github.com/Pulkitchadha/use-why-did-you-render",
+  "homepage": "https://github.com/Pulkitchadha/use-why-did-you-render",
   "main": "dist/index.js",
   "engines": {
     "node": ">=8",
