@@ -1,17 +1,19 @@
-# useWhyDidYouRender
-UseWhyDidYouRender helps to find which prop change is causing re-renders in a React component, making it easier to fix rendering issues in the react component.
+# useWhyDidYouRender [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
+> This react hook helps to find which prop change is causing re-renders in a React component, making it easier to fix rendering issues in the react component.
 
-To use, 
+## How to use it:
 
-add useWhyDidYouRender(props, { name : "COMPONENT_NAME", printLog: true }) in any component
+1. Add Below code in your component.
 
-<!-- OR -->
-
+```sh
+useWhyDidYouRender(props, { name : "COMPONENT_NAME", printLog: true });
+                    OR
 const { changedProps } = useWhyDidYouRender(props);
 console.log(changedProps);
-
-# Output:
-<!-- COMPONENT_NAME => {
+```
+### Output:
+```sh
+COMPONENT_NAME => {
     PROP_NAME: {
         from: oldValue,
         to: newValue,
@@ -21,4 +23,14 @@ console.log(changedProps);
         to: newValue,
     },
     ---------------
-} -->
+}
+```
+
+## Options
+
+1) name: numbre, Default: useWhyDidYouRender
+2) printLog: boolean, Default: false
+
+## License
+
+MIT © [pulkitchdha]()
