@@ -1,6 +1,6 @@
 {
   "name": "use-why-did-you-render",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This react hook helps to find which prop change is causing re-renders in a React component",
   "author": "Pulkit Chadha",
   "license": "Apache-2.0",
