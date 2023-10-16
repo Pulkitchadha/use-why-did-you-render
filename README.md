@@ -14,6 +14,8 @@
 2. Then,add the below code to your component.
 
 ```sh
+import { useWhyDidYouRender } from "use-why-did-you-render";
+
 useWhyDidYouRender(props, { name : "COMPONENT_NAME", printLog: true });
             OR
 const { changedProps } = useWhyDidYouRender(props);
