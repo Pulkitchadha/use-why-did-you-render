@@ -14,7 +14,9 @@
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "test": "jest"
+    "test": "jest",
+    "coverage": "npm test -- --coverage",
+    "publish": "npm run build && npm publish"
   },
   "jest": {
     "transform": {
